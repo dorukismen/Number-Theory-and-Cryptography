@@ -37,6 +37,12 @@ You have access to the function ExtendedEuclid(a, b)ExtendedEuclid(a,b) which re
 
 Implement the algorithm explained in the lectures.
 
-- Modular Exponentiation (This one is for fun, not quiz answer)
+- Modular Exponentiation
 
 How to compute b^e mod? There is no need to compute the giant number b^e and divide by m. We can start with 1, then multiply by b and immediately take the result modulo m, repeat e times. 
+
+- Fast Modular Exponentiation
+
+(1) Implement the function FastModularExponentiation(b, k, m) which computes (b^2^k) modm using only around 2k modular multiplications. You are not allowed to use Python built-in exponentiation functions.
+
+(2) Implement the function FastModularExponentiation(b, e, m) which computes (b^e)modm using around 2log2(e) modular multiplications. You are not allowed to use Python built-in exponentiation functions.
