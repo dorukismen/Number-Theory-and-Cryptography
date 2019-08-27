@@ -26,3 +26,13 @@ Given three integers a, b, and n, such that gcd(a,n)=1 and n > 1, the algorithm 
 0 <= x <=  n - 1, and
 
 b / a = x (modn) (that is, b = a x (modn)).
+
+- Chinese Remainder Theorem -
+
+Implement the algorithm to construct the number from the Chinese Remainder Theorem.
+You need to implement the function ChineseRemainderTheorem(n_1, r_1, n_2, r_2) which takes two coprime numbers n_1  and n_2 
+and the respective remainders 0 <= r_1 < n_1 and 0 <= r_2 < n_2, and must return the number r such that 0 <= r < n_1*n_2≤r, r≡r1modn1 and r≡r2modn2.
+
+You have access to the function ExtendedEuclid(a, b)ExtendedEuclid(a,b) which returns pair of numbers (x, y)(x,y) such that ax + by = GCD(a, b)ax+by=GCD(a,b).
+
+Implement the algorithm explained in the lectures.
