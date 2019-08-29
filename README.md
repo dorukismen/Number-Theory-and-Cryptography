@@ -46,3 +46,11 @@ How to compute b^e mod? There is no need to compute the giant number b^e and div
 (1) Implement the function FastModularExponentiation(b, k, m) which computes (b^2^k) modm using only around 2k modular multiplications. You are not allowed to use Python built-in exponentiation functions.
 
 (2) Implement the function FastModularExponentiation(b, e, m) which computes (b^e)modm using around 2log2(e) modular multiplications. You are not allowed to use Python built-in exponentiation functions.
+
+- RSA Quiz: Code Question 1
+
+Implement RSA encryption with the given public key modulo, exponentmodulo,exponent.
+
+You have access to the function PowMod(a, n, modulo) which computes anmodmodulo using the fast modular exponentiation algorithm from the previous module. You also have access to the function ConvertToInt(message) which converts a text message to an integer.
+
+You need to fix the implementation of the function Encrypt(message, modulo, exponent) to return the integer ciphertext according to RSA encryption algorithm.
