@@ -24,5 +24,4 @@ def PowMod(a, n, mod): # Converts message(int), exponent, public key to cipherte
           return b * a % mod
 
 def Encrypt(message, modulo, exponent):
-  # Fix this implementation
   return PowMod(ConvertToInt(message), exponent, modulo)
