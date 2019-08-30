@@ -54,3 +54,12 @@ Implement RSA encryption with the given public key modulo, exponentmodulo,expone
 You have access to the function PowMod(a, n, modulo) which computes anmodmodulo using the fast modular exponentiation algorithm from the previous module. You also have access to the function ConvertToInt(message) which converts a text message to an integer.
 
 You need to fix the implementation of the function Encrypt(message, modulo, exponent) to return the integer ciphertext according to RSA encryption algorithm.
+
+- RSA Quiz: Code Question 2
+
+Implement RSA decryption with the given private key p, q, exponent.
+
+You have access to the function ConvertToStr(m) which converts from integer mm to the plaintext messagemessage. You also have access to the function InvertModulo(a, n) which takes coprime integers a and n as inputs and returns integer b such that ab≡1modn. You also have access to the function PowMod(a, n, modulo) which computes anmod(modulo) using fast modular exponentiation.
+
+You need to fix the implementation of the function Decrypt(ciphertext, p, q, exponent) to decrypt the message which was encrypted using the public key (n=p⋅q,e=exponent).
+
