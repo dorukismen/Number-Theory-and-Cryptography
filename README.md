@@ -75,3 +75,10 @@ Alice has ciphered her message using public key modulo, exponent that is availab
 
 You also have function DecipherSimple(ciphertext,modulo,exponent,potential_messages) implemented in the starter code. You need to fix this implementation to solve the problem. It should take the ciphertext sent from Alice to the center, the public key modulo, exponent and the set of potential messages that Alice could have sent, and return the message that Alice encrypted and sent as a string. For example, if Alice took message "wait", encrypted it with the given modulo and exponent, and got number 139763215 as the ciphertext, you will need to return the string "wait" given the ciphertext = 139763215, modulo, exponent and potential_messages=["attack","don′t attack","wait"].
 
+- RSA Quiz: Code Question 4 (Small Prime Attack)
+
+Alice is using RSA encryption with a public key modulo, exponent such that modulo=p⋅q with one of the primes p and q being less than 1000000, and you know about it. You want to break the cipher and decrypt her message.
+
+You can use the functionDecrypt(ciphertext,p,q,e) which decrypts the ciphertext given the private key p, q and the public exponent e.
+
+You are also given the function DecipherSmallPrime(ciphertext,modulo,exponent), and you need to fix its implementation so that it can decipher the ciphertext in case when one of the prime factors of the public modulo is smaller than 1000000.
