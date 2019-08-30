@@ -47,7 +47,7 @@ How to compute b^e mod? There is no need to compute the giant number b^e and div
 
 (2) Implement the function FastModularExponentiation(b, e, m) which computes (b^e)modm using around 2log2(e) modular multiplications. You are not allowed to use Python built-in exponentiation functions.
 
-- RSA Quiz: Code Question 1
+- RSA Quiz: Code Question 1 (Encryption)
 
 Implement RSA encryption with the given public key modulo, exponentmodulo,exponent.
 
@@ -55,11 +55,23 @@ You have access to the function PowMod(a, n, modulo) which computes anmodmodulo 
 
 You need to fix the implementation of the function Encrypt(message, modulo, exponent) to return the integer ciphertext according to RSA encryption algorithm.
 
-- RSA Quiz: Code Question 2
+- RSA Quiz: Code Question 2 (Decryption)
 
 Implement RSA decryption with the given private key p, q, exponent.
 
 You have access to the function ConvertToStr(m) which converts from integer mm to the plaintext messagemessage. You also have access to the function InvertModulo(a, n) which takes coprime integers a and n as inputs and returns integer b such that ab≡1modn. You also have access to the function PowMod(a, n, modulo) which computes anmod(modulo) using fast modular exponentiation.
 
 You need to fix the implementation of the function Decrypt(ciphertext, p, q, exponent) to decrypt the message which was encrypted using the public key (n=p⋅q,e=exponent).
+
+- RSA Quiz: Code Question 3 (Ciphertext Attack)
+
+Secret agent Alice has sent one of the following messages to the center:
+
+attack
+don't attack
+wait
+
+Alice has ciphered her message using public key modulo, exponent that is available to you, and you have intercepted her ciphertext. You want to know what was the content of her message. You have access to the function Encrypt(message, modulo, exponent) which takes in a message as a string and returns a big integer as a ciphertext. It uses RSA encryption with public key modulo, exponent. In the starter code, you have an example usage of the function Encrypt.
+
+You also have function DecipherSimple(ciphertext,modulo,exponent,potential_messages) implemented in the starter code. You need to fix this implementation to solve the problem. It should take the ciphertext sent from Alice to the center, the public key modulo, exponent and the set of potential messages that Alice could have sent, and return the message that Alice encrypted and sent as a string. For example, if Alice took message "wait", encrypted it with the given modulo and exponent, and got number 139763215 as the ciphertext, you will need to return the string "wait" given the ciphertext = 139763215, modulo, exponent and potential_messages=["attack","don′t attack","wait"].
 
